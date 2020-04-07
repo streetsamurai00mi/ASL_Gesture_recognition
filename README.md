@@ -3,7 +3,7 @@ A CNN based for Gesture Recognition System.
 
 Dependencies:
 
-1. Numpy 2. Pandas 3. Tensorflow 4. tkinter 5. OpenCV 6. SQLite
+1. Numpy 2. Pandas 3. Tensorflow 4. tkinter 5. OpenCV 6. SQLite3
 
 How to use:
 
@@ -24,6 +24,17 @@ Information on Indivisual files:
 3. image_gen: This file contains funtions for image augmentation and feed the images into a csv file.
 4. custom_model_trainer: This file helps to train the custom dataset created over the already trained model.
 5. gesture_with_hand_tracking: It contains code for gesture detection using the trained model and the movement database.
+
+Database Details:
+  Database Name: gesturedb
+  Table Name: ges_dy
+  Table Schema:
+              CREATE TABLE ges_dy(
+                gescode INTEGER,
+                word TEXT,
+                movement TEXT);
+                
+  Database is built n sqlite3.
 
 MNIST Dataset for ASL letters:
 https://www.kaggle.com/datamunge/sign-language-mnist
